@@ -39,10 +39,17 @@ const ImageToTextConverter = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600">
-      <h1 className="text-3xl font-bold mb-10 text-white">Image to Text Converter</h1>
+    <div 
+      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: 'url("https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")',
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        backgroundBlendMode: 'overlay'
+      }}
+    >
+      <h1 className="text-4xl font-bold mb-10 text-white drop-shadow-lg">Image to Text Converter</h1>
       
-      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+      <div className="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-2xl w-full max-w-md">
         <label className="block text-gray-700 text-sm font-bold mb-2">
           Upload an Image
         </label>
